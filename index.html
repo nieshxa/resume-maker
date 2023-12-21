@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Resume Maker</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <div class="form">
+      <div class="inputGroup">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" />
+      </div>
+      <div class="inputGroup">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" />
+      </div>
+      <div class="inputGroup">
+        <label for="phonenum">Phone Number</label>
+        <input type="tel" id="phonenum" />
+      </div>
+      <div class="inputGroup">
+        <label for="objective">Objective</label>
+        <input type="text" id="objective" />
+      </div>
+      <hr />
+      <div class="inputGroup">
+        <label for="school">institution attended</label>
+        <input type="text" id="school" />
+      </div>
+      <div class="inputGroup">
+        <label for="schoolloc">institution address</label>
+        <input type="text" id="schoolloc" />
+      </div>
+      <div class="inputGroup">
+        <label for="course">Course</label>
+        <input type="text" id="course" />
+      </div>
+      <div class="d-flex">
+        <div class="inputGroup">
+          <label for="yearstart">start year</label>
+          <select id="yearstart"></select>
+        </div>
+        <div class="inputGroup">
+          <label for="yearstart">end year</label>
+          <select id="yearend"></select>
+        </div>
+      </div>
+      <hr />
+      <div class="inputGroup">
+        <label for="school">institution attended (optional)</label>
+        <input type="text" id="schoolopt" />
+      </div>
+      <div class="inputGroup">
+        <label for="schoollocopt">institution address</label>
+        <input type="text" id="schoollocopt" />
+      </div>
+      <div class="inputGroup">
+        <label for="course">Course (optional)</label>
+        <input type="text" id="courseopt" />
+      </div>
+      <div class="d-flex">
+        <div class="inputGroup">
+          <label for="yearstart">start year (optional)</label>
+          <select id="yearstartopt">
+            <option value="" selected disabled>Please select</option>
+          </select>
+        </div>
+        <div class="inputGroup">
+          <label for="yearstart">end year (optional)</label>
+          <select id="yearendopt">
+            <option value="" selected disabled>Please select</option>
+          </select>
+        </div>
+      </div>
+      <hr />
+      <div class="inputGroup">
+        <label for="sex">Sex</label>
+        <select type="text" id="sex">
+          <option value="" disabled="disabled" selected="selected">
+            Please select
+          </option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+      </div>
+      <div class="inputGroup">
+        <label for="bday">Birthday</label>
+        <input type="date" id="bday" />
+      </div>
+      <div class="d-flex">
+        <div class="inputGroup">
+          <label for="height">Height</label>
+          <input type="number" id="height" placeholder="height in cm" />
+        </div>
+        <div class="inputGroup">
+          <label for="weight">weight</label>
+          <input type="number" id="weight" placeholder="weight in kg" />
+        </div>
+      </div>
+
+      <div
+        class="print"
+        onclick="window.print();">
+        Print
+      </div>
+    </div>
+    <div class="display" id="display">
+      <div class="fullname">Jane Doe Smith</div>
+      <div class="email">sample@mail.only</div>
+      <div class="phonenum">09123456789</div>
+      <div class="objective"></div>
+      <div class="section">Education</div>
+      <div class="d-flex">
+        <div class="school">[Name of Institution]</div>
+        <div class="schoolloc"></div>
+      </div>
+      <div class="d-flex">
+        <div class="course">[Course]</div>
+        <div class="schoolyear">
+          <span class="start"></span> to <span class="end"></span>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="schoolopt"></div>
+        <div class="schoollocopt"></div>
+      </div>
+      <div class="d-flex">
+        <div class="courseopt"></div>
+        <div class="schoolyear">
+          <span class="startopt"></span> <span class="optto">to</span>
+          <span class="endopt"></span>
+        </div>
+      </div>
+
+      <div class="section">Personal information</div>
+      <div class="d-flex pinfo">
+        <div class="labels">
+          <p>Sex:</p>
+          <p>Birthday:</p>
+          <p>Height:</p>
+          <p>Weight:</p>
+        </div>
+        <div class="ans">
+          <p class="sex"></p>
+          <p class="bday"></p>
+          <p class="height"></p>
+          <p class="weight"></p>
+        </div>
+      </div>
+
+      <div class="certify">
+        I certify the accuracy of my personal information and education details
+        in this resume, ensuring a truthful representation. This affirmation
+        reflects my commitment to honesty and integrity in the presentation of
+        my qualifications.
+      </div>
+      <div class="sign">
+        <div class="signname">Jane Doe Smith</div>
+        <div class="signapp">Applicant</div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

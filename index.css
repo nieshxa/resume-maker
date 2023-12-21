@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+body {
+  font-family: "Lexend", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #828ba2;
+  height: 100vh;
+  overflow-y: none;
+  font-size: 0.9rem;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+.form,
+.display {
+  height: 99vh;
+  width: 76.5918367347vh;
+  overflow-y: auto;
+  padding: 1rem;
+}
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+.inputGroup label {
+  /* margin-bottom: -0.5rem;
+  margin-left: 0.5rem;
+  z-index: 1;
+  padding: 0 0.5rem;
+  font-weight: 600;
+  background-color: #fff; */
+  width: fit-content;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.inputGroup input,
+.inputGroup select {
+  padding: 0.5rem;
+  outline: none;
+  /* border: solid 3px #808080;
+  border-radius: 0.4rem; */
+  border: none;
+  background-color: #eff2f9;
+  font-family: "Lexend", sans-serif;
+  margin-bottom: 0.5rem;
+}
+.display {
+  color: #000;
+  border: solid 1px #000;
+  height: 99vh;
+  width: 76.5918367347vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fullname {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 80%;
+}
+/* .phonenum,
+.email {
+  text-align: center;
+} */
+.objective {
+  border-bottom: solid 1px #000;
+  width: 100%;
+  text-align: justify;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 80%;
+  padding: 0.5rem 0;
+  font-size: 0.75rem;
+  text-indent: 2rem;
+}
+.section {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  align-self: start;
+  padding: 0 10%;
+  margin-top: 0.5rem;
+}
+.school,
+.schoolopt {
+  font-weight: 600;
+}
+.schoolyear,
+.course {
+  width: 80%;
+}
+.d-flex {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  width: 80%;
+  align-items: start;
+}
+.schoolloc,
+.schoolyear {
+  text-wrap: nowrap;
+  width: fit-content;
+}
+.course,
+.school {
+  flex-grow: 1;
+}
+.form .d-flex {
+  width: 100%;
+}
+.d-flex .inputGroup {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+hr {
+  margin: 1rem 0;
+}
+.optto {
+  display: none;
+}
+.form {
+  border: solid 1px #000;
+}
+.labels p {
+  font-weight: 600;
+  text-align: right;
+}
+.pinfo {
+  display: flex;
+  gap: 1rem;
+}
+.ans {
+  flex-grow: 1;
+}
+.pinfo p {
+  min-height: 22.5px;
+}
+.certify {
+  width: 80%;
+  margin-top: 1rem;
+  text-indent: 1rem;
+  text-align: justify;
+  font-size: 0.75rem;
+}
+.sign {
+  align-self: end;
+  margin-right: 10%;
+  margin-top: 3rem;
+}
+.signname {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.signapp {
+  text-align: center;
+}
+@media print {
+  .form {
+    display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body {
+    flex-direction: column;
+    height: fit-content;
+    padding: 1rem;
+  }
+  .form {
+    height: fit-content;
+    border: none;
+    width: 100%;
+  }
+}
